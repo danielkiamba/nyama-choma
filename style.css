@@ -245,7 +245,7 @@ footer a{
 }
     */
     /* media queries */
-@media screen and (max-width: 900px){
+@media (max-width: 900px){
     body{
         margin: 0 1%;
     background-color: greenyellow;
@@ -281,7 +281,7 @@ footer a{
 width: 46%;
 }
 }
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
     body{
         margin: 0 1%;
     background-color: greenyellow;
