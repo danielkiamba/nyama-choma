@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let myButton = document.getElementById('show-more');
 
     myButton.addEventListener('click', function() {
+<<<<<<< HEAD
         event.preventDefault
+=======
+>>>>>>> 127c3af0ee1570f87f9aec2e761141865a179f15
         if (myContent.classList.contains('open')) {
             // shrink the box
             myContent.classList.remove('open');
@@ -13,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             myContent.classList.add('open');
             myButton.innerHTML = 'Show Less';
         }
+<<<<<<< HEAD
     })
 }); 
 document.addEventListener('DOMContentLoaded', function() {
@@ -31,3 +35,13 @@ if(x.classList.contains(`opena`)) {
 })
 
 
+=======
+    });
+});
+
+$(document).ready(function() {
+    $(`.burger-nav`).on(`click`, function() {
+        $(`header nav ul`).toggleClass(`open`);
+    })
+});
+>>>>>>> 127c3af0ee1570f87f9aec2e761141865a179f15
