@@ -12,11 +12,7 @@ body{
 }
 
 h1.logo{
-<<<<<<< HEAD
-    background-image: url(images/logo.png);
-=======
     background-image: url(logo.png);
->>>>>>> 127c3af0ee1570f87f9aec2e761141865a179f15
     background-repeat: no-repeat;
     width: 100px;
     text-indent: -10000px;
@@ -54,11 +50,7 @@ header nav li a{
 }
 
 #home-menu h2{
-<<<<<<< HEAD
-    background-image: url(images/menu-head.png);
-=======
     background-image: url(menu-head.png);
->>>>>>> 127c3af0ee1570f87f9aec2e761141865a179f15
     background-repeat: no-repeat;
     width: 156px;
     height: 74px;
@@ -253,11 +245,7 @@ footer a{
 }
     */
     /* media queries */
-<<<<<<< HEAD
 @media screen and (max-width: 900px){
-=======
-@media (max-width: 900px){
->>>>>>> 127c3af0ee1570f87f9aec2e761141865a179f15
     body{
         margin: 0 1%;
     background-color: greenyellow;
@@ -293,11 +281,7 @@ footer a{
 width: 46%;
 }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 480px){
-=======
-@media (max-width: 480px){
->>>>>>> 127c3af0ee1570f87f9aec2e761141865a179f15
     body{
         margin: 0 1%;
     background-color: greenyellow;
@@ -339,20 +323,12 @@ header .wrapper{
     padding: 0;
 }
 header nav ul{
-<<<<<<< HEAD
     /*overflow: hidden; */
-=======
-    overflow: hidden;
->>>>>>> 127c3af0ee1570f87f9aec2e761141865a179f15
     background-color: #505050;
    /* height: 0; */
    display: none;
 }
-<<<<<<< HEAD
 header nav ul.opena{
-=======
-header nav ul.open{
->>>>>>> 127c3af0ee1570f87f9aec2e761141865a179f15
    /* height: auto;*/
     display: block;
 }
@@ -370,8 +346,4 @@ display: block;
 margin: 0;
 
 }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 127c3af0ee1570f87f9aec2e761141865a179f15
