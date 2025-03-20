@@ -29,10 +29,15 @@
         <!-- Start homepage content -->
         
         <div id="main-banner">
-            <img src="banner.jpg" alt="Welcome to Resto">
+           <picture>
+               <source srcset="banner-sm1.jpg" media="(min-width: 480px)">
+               <source srcset="banner-md-1.jpg" media="(max-width: 768px)">
+               <img src="banner.jpg" alt="Main banner image">
+ 
+           </picture>
         </div>
         
-        <div class="wrapper">
+    <div class="wrapper">
         <section id="home-menu">
             <h2>Menu</h2>
             <ul>
@@ -141,7 +146,8 @@
         Lorem ipsum dolor, sit on amet consectetur adipisicing elit. Quos dolore incidunt deleniti autem assumenda possimus dicta doloribus officiis nam eveniet eligendi aspernatur similique dolor, quod quis dignissimos sequi minus neque quidem! Asperiores perferendis et dicta nihil non, illo itaque odio beatae maiores veniam ipsum ad repellat porro pariatur perspiciatis nesciunt rem reprehenderit similique quia praesentium officia commodi illum voluptates? Dolorum culpa autem esse error vero minima animi, magnam dolorem cum?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima dolorem itaque? Quo quia facere esse rem temporibus doloremque ipsum officia natus corporis animi. Iste repudiandae, molestias provident perferendis a aliquid magnam vel, animi fuga veniam illum? Unde doloremque nam autem quia quas repudiandae, ex ullam repellendus repellat ipsum cupiditate quaerat suscipit impedit saepe. Consectetur assumenda voluptatibus numquam, corporis, repudiandae omnis in rem dolorem modi esse totam ea repellendus? Consequatur.
     </div>
-    <a href="" id="show-more">show more</a>
+    <!-- <a href="" id="show-more">show more</a> -->
+     <button id="show-more">Show more</button>
 
   <!----  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="design.js"></script>
