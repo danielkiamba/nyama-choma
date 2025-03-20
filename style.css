@@ -90,6 +90,7 @@ header nav li a{
     z-index: 1;
     background: #fff;
     padding-right: 15px;
+    margin-right: 15px;
 }
 
 .price{
