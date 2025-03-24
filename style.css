@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 body{
     font-family: Georgia;
     
@@ -6,9 +8,11 @@ body{
 
 .wrapper{
     width: 100%;
-    max-width: 1180px;
+    /* max-width: 1180px; */
     padding: 0 10px;
     margin: 0 auto; 
+    text-align: center;
+    justify-content: center;
 }
 
 .logo{
@@ -21,7 +25,16 @@ body{
     /* text-indent: -10000px; */
     float: left;
 }
-
+.logos {
+      /* background-image: url(/images/dkk-logo.jpeg); */
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      margin: 0 auto ;
+      /* text-indent: -10000px; */
+      
+}
 header nav{
     float: right;
 }
@@ -228,7 +241,7 @@ footer a{
     margin: 0 auto;
     font-size: 18px;
     color: #444;
-    max-height: 270px;
+    max-height: 66px;
     overflow: hidden;
     transition: max-height 1s;
 }
@@ -288,22 +301,31 @@ img {
 width: 46%;
 }
 .wrapper {
-    margin: 0px;
+    margin: 0 auto;
 }
+
+
 }
 @media screen and (max-width: 600px){
     body{
-        margin: 0 1%;
+        
     background-color: greenyellow;
     overflow-x: hidden;
     }
+    .wrapper{
+       margin: 0 auto;
+    }
     footer{
         background-color: green;
-        margin: 5px 0 5px 0px;
+        justify-content: center;
+        margin: 5px;
     }
 #featured li{
 width: 90%;
-margin: 0 auto;
+margin: 0 5px;
+}
+.featured ul {
+    margin: 0 auto;
 }
 footer ul{
     width: 98%;
@@ -354,10 +376,7 @@ color: #fff;
 padding: 10px;
 border-bottom: 1px solid #404040;
 display: block;
-margin: 0;
+margin: 0 auto;
 
-}
-.wrapper {
-    margin-right: 0px;
 }
 }
