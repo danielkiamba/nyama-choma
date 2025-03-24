@@ -283,6 +283,25 @@ img {
         margin: 0;
         padding: 0;
     }
+    .dropdown{
+        position: relative;
+    }
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        z-index: 1000;
+        background-color: white;
+    }
+    .dropdown-menu li{
+        padding: 10px;
+        white-space: nowrap;
+        width: 100%;
+        text-decoration: underline;
+
+    }
+   
     h1.logo{
         margin: 10px auto 0;
         float: none;
