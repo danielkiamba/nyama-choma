@@ -317,8 +317,9 @@ img {
         text-align: center;
     }
 #featured li{
-width: 46%;
+width: 48%;
 }
+
 .wrapper {
     margin: 0 auto;
 }
@@ -340,7 +341,7 @@ width: 46%;
         margin: 5px;
     }
 #featured li{
-width: 90%;
+width: 97%;
 margin: 0 5px;
 }
 .featured ul {
