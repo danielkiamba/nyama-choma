@@ -49,12 +49,16 @@ header nav li{
     float: left;
     list-style-type: none;
     margin: 10px 20px;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    padding: 8px;
 }
 
 header nav li a{
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 
@@ -76,6 +80,7 @@ header nav li a{
 .dropdown-menu li{
     padding: 10px;
     white-space: nowrap;
+    background-color: tomato;
 }
 .dropdown-menu li a {
     display: block;
@@ -84,8 +89,10 @@ header nav li a{
     font-size: 16px;
 }
 
-.dropdown:hover .dropdown-menu{
-    display: block;
+@media  screen and (min-width: 900px) {
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
 }
 
 #main-banner, #main-banner img{
@@ -265,7 +272,7 @@ img {
     border-radius: 5px;
 }
     /* media queries */
-@media screen and (max-width: 900px){
+@media screen and (min-width: 601px) and (max-width: 1200px){
     body{
         margin: 0 1%;
     background-color: greenyellow;
@@ -278,10 +285,16 @@ img {
         float: none;
         clear: left;
         width: 100%;
+      
     }
     header nav ul{
         margin: 0;
         padding: 0;
+       
+    }
+    
+    header nav li a {
+        font-size: 12px;
     }
     .dropdown{
         position: relative;
@@ -293,6 +306,7 @@ img {
         top: 100%;
         z-index: 1000;
         background-color: white;
+        padding: 0 3%;
     }
     .dropdown-menu li{
         padding: 10px;
@@ -301,16 +315,20 @@ img {
         text-decoration: underline;
 
     }
-   
+     
+    .show-menu{
+        display: block;
+    }
     h1.logo{
         margin: 10px auto 0;
         float: none;
     }
     header nav ul li{
-        margin: 10px 0;
-        padding: 0;
-        width: 20%;
+        margin: 10px 2px;
+        padding: 1.5%;
+        width: 45%;
         text-align: center;
+       
     }
     footer ul{
         width: 48%;
@@ -364,25 +382,47 @@ margin:30px 2% !important;
   /*  width: 180%;
     left: -40%; */
 }
+
+header nav{
+    float: none;
+    clear: left;
+    width: 100%;
+  
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+   
+}
+header nav li{
+    /* float: left; */
+    list-style-type: none;
+    margin: 10px 0px;
+    background-color: rgb(89, 50, 205);
+    border-radius: 5px;
+    padding: 8px;
+}
+
 .burger-nav{
     display: block;
     height: 40px;
     width: 100%;
     background: url(dropm.jpeg) no-repeat 98% center;
     background-color: #404040;
+   
 }
 header .wrapper{
     width: 100%;
     padding: 0;
-}
-header nav ul{
-    /*overflow: hidden; */
+} 
+header nav ul {
+    overflow: hidden;
     background-color: #505050;
-   /* height: 0; */
-   display: none;
+   height: 0px; 
+    display: none;  
 }
 header nav ul.opena{
-   /* height: auto;*/
+   height: auto;
     display: block;
 }
 header nav ul li{
@@ -398,5 +438,25 @@ border-bottom: 1px solid #404040;
 display: block;
 margin: 0 auto;
 
+}*/
+.dropdown-menu{
+    position: static;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
 }
+.dropdown.active .dropdown-menu{
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
 }
+.dropdown-toggle::after{
+    content: '+';
+    float: right;
+}
+.dropdown-toggle.active::after{
+    content: '-';
+}
+
+
+}
+
