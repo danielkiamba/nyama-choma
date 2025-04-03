@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let myButton = document.getElementById('show-more');
 
     myButton.addEventListener('click', function() {
-        event.preventDefault
+       
         if (myContent.classList.contains('open')) {
             // shrink the box
             myContent.classList.remove('open');
@@ -39,7 +39,7 @@ navigationMenu.addEventListener(`click`, () => {
     dropdownMenu.classList.toggle(`show-menu`);
 });
 
-
+/*
 document.addEventListener('DOMContentLoaded', () => {
     const dropdowns = document.querySelectorAll('.dropdown');
 
@@ -61,5 +61,5 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdown.classList.toggle('active');
         });
     });
-});
+}); */
 
