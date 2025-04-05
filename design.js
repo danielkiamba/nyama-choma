@@ -46,14 +46,20 @@ navigationMenu.addEventListener(`click`, () => {
 // drop down menu max width 600px
 
 const dropMenu = document.querySelector(`.dropdown-toggle`);
-
-
 const dropContent = document.querySelector(`.dropdown-menu`);
-dropMenu.addEventListener(`click`, (event) => {
-    event.preventDefault();
-    dropMenu.classList.toggle(`show`);
+const deuces = document.querySelector(`.deuce`);
+
+deuces.addEventListener(`click`, () => {
+    
     dropContent.classList.toggle(`show`);
 })
+
+
+dropMenu.addEventListener(`click`, (event) => {
+    event.preventDefault()
+    dropMenu.classList.toggle(`show`);
+    
+});
 
 
 

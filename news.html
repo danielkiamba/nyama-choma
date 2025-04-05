@@ -5,27 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant News</title>
     <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="a-main">
-        <ul class="accordion">
-            <li class="accordion-item">
-                <a href="#">Our Story</a>
-                <ul class="accordion-content">
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Restaurants</a></li>
-                    <li><a href="#">Reviews</a></li>
-                </ul>
-            </li>
-            <li class="accordion-item"><a href="#">Menu</a></li>
-            <li class="accordion-item"><a href="#">Reserve a Table</a></li>
-            <li class="accordion-item"><a href="#">News</a></li>
-            <li class="accordion-item"><a href="#">Book Now</a></li>
-        </ul>
-    </nav>
 
     <section class="news-section">
+
+
+
+        <header>
+            <h1 class="logo"><img src="dkk-logo.jpeg" class="logo" alt=""></h1>
+            <nav>
+                <a href="" class="burger-nav" id="dropmenu"></a>
+                <h2>Main Navigation</h2>
+                <ul id="nav-menu">
+
+                    <li><a href="index.html" >home</a></li>
+
+                    <li class="dropdown deuce"><a class="dropdown-toggle">Our Story</a>
+    
+                    <ul class="dropdown-menu">
+                        <li><a href="">History</a></li>
+                        <li><a href="">Staff</a></li>
+                        <li><a href="">Restaurants</a></li>
+                        <li><a href="">Reviews</a></li>
+    
+                    </ul>
+                    
+                    </li>
+                    <li class="deuce"><a href="" >MENU</a></li>
+                    <li class="deuce"><a href="" >RESERVE A TABLE</a></li>
+                    <li class="deuce"><a href="news.html" >News</a></li>
+                    <li class="deuce"><a href="" >book now</a></li>
+                </ul>
+            </nav>
+        <!-- </div> -->
+    </header>
+
+
+
         <h2>Exciting News from Our DK Choma Zone Restaurant! 🍽️</h2>
 
         <div class="news-item">
@@ -55,5 +73,6 @@
     </section>
 
     <script src="news.js"></script>
+    <script src="design.js"></script>
 </body>
 </html>
