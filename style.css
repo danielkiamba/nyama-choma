@@ -49,21 +49,29 @@ header nav li{
     float: left;
     list-style-type: none;
     margin: 10px 20px;
-    background-color: yellowgreen;
-    border-radius: 5px;
-    padding: 10px 20px;
+    /* background-color: yellowgreen; */
+   
+    /* padding: 10px 20px; */
+    cursor: pointer;
 }
-.dropdown-toggle {
+/* .dropdown-toggle { 
     padding: 18px;
-}
+} */
 header nav li a{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
+    display: block;
+    width: 100%;
+    height: 100%;
   
 }
-
+.deuce2 {
+    padding: 8px 15px;
+    background-color: yellowgreen;
+    border-radius: 5px;
+}
 
 .dropdown{
     position: relative;
@@ -298,6 +306,9 @@ footer a{
     
     header nav li a {
         font-size: 12px;
+        display: block;
+        width: 100%;
+        height: 100%;
     }
     .dropdown{
         position: relative;
@@ -328,7 +339,7 @@ footer a{
     }
     header nav ul li{
         margin: 10px 2px;
-        padding: 0.1%;
+        padding: 2% 0.1%;
         width: 45%;
         text-align: center;
        
