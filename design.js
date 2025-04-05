@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // handle 'show more' button functionality
     let myContent = document.getElementById('content');
     let myButton = document.getElementById('show-more');
 
+    if (myButton && myContent){
     myButton.addEventListener('click', function() {
        
         if (myContent.classList.contains('open')) {
@@ -14,7 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
             myButton.innerHTML = 'Show Less';
         }
     })
-}); 
+
+}
+
+})
+
 
 // navbar ul dropmenu
 
