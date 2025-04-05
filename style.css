@@ -201,7 +201,7 @@ header nav li a{
 #featured li img{
     width: 100%;
     margin-bottom: 10px;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: 20px;
     
@@ -355,6 +355,9 @@ footer a{
     }
 #featured li{
 width: 48%;
+}
+#featured li img {
+    height: 200px;
 }
 
 .wrapper {
