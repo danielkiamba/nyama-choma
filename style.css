@@ -514,7 +514,7 @@ margin: 0 auto;
     color: white;
 }
 .dropdown-toggle::after{
-    content: '+';
+    content: '‣';
     float: right;
 }
 .dropdown-toggle.show::after{
