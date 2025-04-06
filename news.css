@@ -50,7 +50,7 @@ a {
     margin: 0 10px;
 } 
 @media screen and (min-width: 600px) {
-    img {
+   .news-item img {
         width: 400px;
         height: 300px;
         object-fit: cover;
