@@ -115,7 +115,7 @@ header nav li a{
     border-bottom: 6px solid #f34949;
 }
 
-#home-menu h2{
+#home-menu .hh2{
     background-image: url(menu-head.png);
     background-repeat: no-repeat;
     width: 156px;
