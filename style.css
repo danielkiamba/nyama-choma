@@ -5,6 +5,108 @@ body{
     font-family: Georgia;
     
 }
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and icon */
+    background-color: hsl(33, 35%, 36%);
+    padding: 3px;
+   
+}
+
+.sign-in-icon {
+    font-size: 24px; /* Adjust the size of the icon */
+    color: gold; /* Default color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 20px; /* Add spacing to the right */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.sign-in-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* General container styling */
+.auth-container {
+    display: flex;
+    flex-direction: column; /* Default layout for smaller screens */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.auth-box, .signup-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing between sections for smaller screens */
+}
+
+.auth-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Social sign-in buttons */
+.social-signin .btn, .social-signup .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.social-signin .facebook, .social-signup .facebook {
+    background-color: #3b5998; /* Facebook blue */
+}
+
+.social-signin .facebook:hover, .social-signup .facebook:hover {
+    background-color: #2d4373;
+}
+
+.social-signin .google, .social-signup .google {
+    background-color: #db4437; /* Google red */
+}
+
+.social-signin .google:hover, .social-signup .google:hover {
+    background-color: #c23321;
+}
+
+.social-signin .btn i, .social-signup .btn i {
+    margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+/* Responsive layout for screens above 600px */
+@media screen and (min-width: 600px) {
+    .auth-container {
+        flex-direction: row; /* Arrange sections side by side */
+        justify-content: center; /* Center the sections horizontally */
+        align-items: flex-start; /* Align sections at the top */
+        gap: 20px; /* Add spacing between the sections */
+    }
+
+    .auth-box, .signup-box {
+        width: 45%; /* Reduce width to fit side by side */
+        margin-bottom: 0; /* Remove bottom margin for side-by-side layout */
+    }
+
+    .signup-box {
+        text-align: left; /* Align text to the left for a cleaner look */
+    }
+}
 
 .wrapper{
     width: 100%;
