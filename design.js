@@ -67,5 +67,21 @@ dropMenu.addEventListener(`click`, (event) => {
     
 });
 
+// dotted icon
+
+
+  const toggleBtn = document.getElementById('toggleSocial');
+  const floatingSocial = document.getElementById('floatingSocial');
+  const toggleIcon = document.getElementById('toggleIcon');
+
+  toggleBtn.addEventListener('click', () => {
+    floatingSocial.style.display = floatingSocial.style.display === 'flex' ? 'none' : 'flex';
+    toggleIcon.classList.toggle('fa-ellipsis-h');
+    toggleIcon.classList.toggle('fa-times');
+  });
+
+
+
+
 
 
