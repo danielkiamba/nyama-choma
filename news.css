@@ -52,6 +52,37 @@ a {
     float: left;
     margin: 0 10px;
 } 
+
+.navbar-nav .nav-link {
+  text-transform: capitalize; /* Capitalizes the first letter of each word */
+  color: white;
+}
+@media (min-width: 992px) { /* Large screens and larger */
+  .rounded-lg-custom {
+      border-radius: 10px;
+      padding: 5px 15px;
+  }
+}
+
+.navbar-toggler:focus , .nav-link:focus {
+  outline: none; /* Removes the focus outline */
+  box-shadow: none; /* Removes any box-shadow applied on focus */
+}
+/* Smooth transition for dropdown using height */
+.dropdown-menu {
+  display: block; /* Ensure the dropdown is part of the layout */
+  overflow: hidden; /* Prevent content from overflowing during the transition */
+  visibility: hidden;
+  max-height: 0; /* Start with height of 0 */
+  transition: max-height 1.5s ease, visibility 1s ease ; /* Smooth transition for height */
+}
+
+.dropdown-menu.show {
+  visibility: visible;
+  max-height: 500px; /* Adjust this value based on your dropdown content */
+}
+
+
 /* reserve a table */
 
 
