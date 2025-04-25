@@ -184,6 +184,7 @@ const featuredSlider = document.querySelector('.featured-slider');
 featuredSlider.addEventListener('mouseenter', stopDishAutoSlide);
 featuredSlider.addEventListener('mouseleave', startDishAutoSlide);
 
+// calender
 
 
 

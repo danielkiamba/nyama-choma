@@ -462,6 +462,22 @@ footer a{
 .featured-dish img {
     max-height: 600px;
 }
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.welcome-container {
+    display: block;overflow: hidden;
+}
+.welcome-text p {
+    display: block;
+}
+
+.welcome-image img{
+    width: 100%;
+    float: right;
+    margin-top: 20px;
+}
   }
   
   .testimonial-track-wrapper {
