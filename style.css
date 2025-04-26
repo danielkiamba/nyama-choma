@@ -25,7 +25,10 @@ body{
 .sign-in-icon:hover {
     color: #007bff; /* Change color on hover */
 }
-
+.login-i {
+    color: #fff;
+    font-size: 1rem;
+}
 /* General container styling */
 .auth-container {
     display: flex;
