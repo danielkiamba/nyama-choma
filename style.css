@@ -32,10 +32,13 @@ body{
     flex-direction: column; /* Default layout for smaller screens */
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f4f4f4;
-    margin: 0;
+    margin-top: 60px;
     padding: 20px;
+    box-sizing: border-box;
+    
+   
 }
 
 .auth-box, .signup-box {
@@ -70,7 +73,32 @@ body{
 }
 
 .social-signin .facebook, .social-signup .facebook {
-    background-color: #3b5998; /* Facebook blue */
+    background-color: rgb(24,120,242); /* Facebook blue */
+}
+.social-signin .lmail, .social-signup .lmail {
+    color: #333;
+
+    border: hsla(0, 0%, 33%, 0.229) solid 1px;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0; /* Add spacing above and below the divider */
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1; /* Makes the lines flexible to fill the space */
+    border-bottom: 1px solid #ccc; /* Style of the horizontal line */
+    margin: 0 10px; /* Spacing between the line and the text */
+}
+
+.divider span {
+    font-size: 14px; /* Adjust the font size of the text */
+    color: #666; /* Text color */
+    font-weight: bold; /* Make the text bold */
 }
 
 .social-signin .facebook:hover, .social-signup .facebook:hover {
@@ -78,29 +106,38 @@ body{
 }
 
 .social-signin .google, .social-signup .google {
-    background-color: #db4437; /* Google red */
+    background:transparent; /* Google red */
+    color: #333;
+    border: hsla(0, 0%, 33%, 0.229) solid 1px;
 }
 
 .social-signin .google:hover, .social-signup .google:hover {
     background-color: #c23321;
+    color: #fff;
 }
 
 .social-signin .btn i, .social-signup .btn i {
     margin-right: 10px; /* Add spacing between the icon and text */
 }
+.signup-prompt {
+    color: #8B0000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* Responsive layout for screens above 600px */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
     .auth-container {
         flex-direction: row; /* Arrange sections side by side */
         justify-content: center; /* Center the sections horizontally */
         align-items: flex-start; /* Align sections at the top */
-        gap: 20px; /* Add spacing between the sections */
+        gap: 50px; /* Add spacing between the sections */
+        align-items: center;
     }
 
     .auth-box, .signup-box {
         width: 45%; /* Reduce width to fit side by side */
         margin-bottom: 0; /* Remove bottom margin for side-by-side layout */
+        max-width: 600px;
     }
 
     .signup-box {
